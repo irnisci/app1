@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('exercise_id')->constrained()->onDelete('cascade');
             $table->boolean('completed')->default(false);
             $table->timestamps();
+        
         });
     }
 
