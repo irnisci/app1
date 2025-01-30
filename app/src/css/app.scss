@@ -1,0 +1,15 @@
+// app global css in SCSS form
+
+
+.register-background {
+  background-image: url('pfad/zum/bild.jpg'); // Pfad zu deinem Hintergrundbild
+  background-size: cover;
+  background-position: center;
+}
+
+
+$my-radial-gradient: radial-gradient(circle, #ff7e5f, #feb47b);
+
+:root {
+  --my-radial-gradient: #{$my-radial-gradient};
+}

@@ -1,0 +1,50 @@
+[
+    {
+      "category": "Lebensfreude",
+      "title": "Komplimente machen",
+      "description": "Worte haben eine große Wirkung – sowohl auf andere als auch auf uns selbst. Komplimente sind kleine Gesten, die das Selbstwertgefühl einer Person stärken können und gleichzeitig eine positive Verbindung zwischen Menschen schaffen. Oft denken wir etwas Positives über eine Person, aber sagen es nicht laut. Doch wenn du jemandem ein ehrliches Kompliment machst, löst das Freude und Dankbarkeit aus. Ein gutes Kompliment ist aufrichtig und spezifisch. Statt einfach nur 'Du siehst gut aus' zu sagen, kannst du es konkreter formulieren: 'Deine Art, wie du mit anderen umgehst, ist wirklich inspirierend.' Oder: 'Ich bewundere deine Geduld und Ruhe in stressigen Situationen.'",
+      "duration": 120
+    },
+    {
+      "category": "Lebensfreude",
+      "title": "Das schönste Erlebnis deines Lebens",
+      "description": "Wir erinnern uns oft an negative Erfahrungen intensiver als an positive. Dabei gibt es viele Momente im Leben, die uns mit Freude erfüllt haben. Sich aktiv daran zu erinnern, kann helfen, den Fokus auf das Gute zu lenken. Nimm dir ein paar Minuten Zeit und denke an einen Moment, in dem du dich absolut glücklich gefühlt hast. Wo warst du? Was hast du gesehen, gehört, gefühlt? Versuche, dich so lebendig wie möglich daran zu erinnern. Dein Gehirn wird diese Erinnerungen aktivieren und dein aktuelles Wohlbefinden positiv beeinflussen.",
+      "duration": 120
+    },
+    {
+      "category": "Aktivität & Energie",
+      "title": "Power-Posing für Selbstbewusstsein",
+      "description": "Unsere Körperhaltung beeinflusst unsere Stimmung und unser Selbstbewusstsein. Wenn du dich klein machst, fühlst du dich unsicher. Wenn du dich aufrichtest, wirkt sich das positiv auf dein Selbstwertgefühl aus. Power-Posing bedeutet, dass du eine Haltung einnimmst, die Stärke und Selbstbewusstsein ausstrahlt. Stelle dich aufrecht hin, Füße hüftbreit auseinander, Brust raus, Schultern entspannt zurück. Nimm die Hände in die Hüften oder strecke die Arme in die Luft, als ob du gerade etwas Großartiges geschafft hast. Atme tief ein und aus.",
+      "duration": 120
+    },
+    {
+      "category": "Aktivität & Energie",
+      "title": "Tanze, als ob niemand zusieht",
+      "description": "Musik und Bewegung sind starke Werkzeuge, um Emotionen zu beeinflussen. Durch Tanzen kann sich Stress abbauen und Glückshormone werden freigesetzt. Dabei spielt es keine Rolle, ob du gut tanzen kannst – es geht darum, sich frei zu bewegen. Spiele deine Lieblingsmusik ab und bewege dich dazu. Springe, drehe dich, bewege deine Arme und Beine so, wie es sich gut anfühlt. Lass dich vollkommen von der Musik mitreißen.",
+      "duration": 120
+    },
+    {
+      "category": "Kommunikation & Beziehungen",
+      "title": "Aktives Zuhören üben",
+      "description": "Gute Gespräche entstehen, wenn sich Menschen wirklich gehört und verstanden fühlen. Doch oft hören wir nur halb zu, weil wir parallel schon überlegen, was wir als Nächstes sagen wollen. Aktives Zuhören bedeutet, bewusst beim Gesprächspartner zu bleiben. Das bedeutet: Blickkontakt halten, nicht unterbrechen, kurz zusammenfassen, was die andere Person gesagt hat ('Verstehe ich richtig, dass...?'). Diese Technik vertieft Gespräche und schafft Nähe.",
+      "duration": 120
+    },
+    {
+      "category": "Kommunikation & Beziehungen",
+      "title": "Wertschätzende Worte wählen",
+      "description": "Worte haben Macht. Sie können aufbauen oder verletzen. Manchmal verwenden wir unbewusst negative oder kritische Formulierungen, obwohl wir es nicht böse meinen. Statt 'Warum hast du das noch nicht erledigt?' kannst du sagen: 'Ich verstehe, dass du viel zu tun hast. Gibt es etwas, womit ich helfen kann?'",
+      "duration": 120
+    },
+    {
+      "category": "Achtsamkeit & Innere Ruhe",
+      "title": "4-7-8 Atemtechnik",
+      "description": "Diese Atemtechnik hilft, Stress abzubauen und Ruhe zu finden. Sie wird auch als 'natürliches Beruhigungsmittel' bezeichnet, weil sie das Nervensystem entspannt. Atme 4 Sekunden lang tief ein. Halte den Atem für 7 Sekunden an. Atme 8 Sekunden lang langsam aus. Wiederhole dies 4 Mal und spüre, wie dein Körper sich entspannt.",
+      "duration": 120
+    },
+    {
+      "category": "Achtsamkeit & Innere Ruhe",
+      "title": "Die 5-4-3-2-1 Methode gegen Stress",
+      "description": "Diese Methode hilft dir, dich sofort im Hier und Jetzt zu verankern, wenn du dich gestresst oder ängstlich fühlst. Nenne 5 Dinge, die du siehst. Nenne 4 Dinge, die du hörst. Nenne 3 Dinge, die du berühren kannst. Nenne 2 Dinge, die du riechen kannst. Nenne 1 Sache, die du schmeckst. Diese Übung lenkt deinen Fokus von Sorgen auf den aktuellen Moment.",
+      "duration": 120
+    }
+  ]
