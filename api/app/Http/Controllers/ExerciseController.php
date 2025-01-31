@@ -19,22 +19,47 @@ class ExerciseController extends Controller
         return response()->json(Exercise::where('category_id', $id)->get());
     }
 
-    public function markExerciseComplete($id)
+    public function markCompleted($exerciseId)
     {
-        UserExercise::updateOrCreate(
-            ['user_id' => Auth::id(), 'exercise_id' => $id],
-            ['completed' => true]
-        );
+        $userExercise = UserExercise::firstOrCreate([
+            'user_id' => Auth::id(),
+            'exercise_id' => $exerciseId,
+        ]);
+
+        $userExercise->completed = true;
+        $userExercise->save();
 
         return response()->json(['message' => 'Übung als erledigt markiert']);
     }
 
-    public function toggleFavorite($id)
+    public function toggleFavorite($exerciseId)
     {
-        $exercise = Exercise::findOrFail($id);
-        $exercise->is_favorite = !$exercise->is_favorite;
-        $exercise->save();
+        $userExercise = UserExercise::firstOrCreate([
+            'user_id' => Auth::id(),
+            'exercise_id' => $exerciseId,
+        ]);
 
-        return response()->json(['message' => 'Favoritenstatus geändert']);
+        $userExercise->is_favorite = !$userExercise->is_favorite;
+        $userExercise->save();
+
+        return response()->json(['message' => 'Favoritenstatus aktualisiert', 'is_favorite' => $userExercise->is_favorite]);
     }
+
+//     public function getExercise($id)
+// {
+//     $exercise = Exercise::where('id', $id)->first();
+//     return response()->json($exercise);
+// }
+
+public function getExercise($id)
+{
+    $exercise = Exercise::findOrFail($id);
+    $userExercise = UserExercise::where('user_id', Auth::id())->where('exercise_id', $id)->first();
+
+    return response()->json([
+        'exercise' => $exercise,
+        'is_favorite' => $userExercise ? $userExercise->is_favorite : false,
+        'completed' => $userExercise ? $userExercise->completed : false,
+    ]);
+}
 }

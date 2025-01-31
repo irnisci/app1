@@ -1,10 +1,10 @@
 <template>
   <q-page class="q-pa-md">
+    <q-btn flat round dense icon="arrow_back" @click="router.go(-1)" />
     <div class="text-h5 text-center q-mb-md">Wähle eine Kategorie</div>
     <div class="text-subtitle1 text-center q-mb-lg">
       Hier kannst du eine Kategorie auswählen, um passende Übungen zu finden.
     </div>
-
     <!-- Kategorien-Liste -->
     <q-list separator bordered class="bg-white rounded-borders">
       <q-item

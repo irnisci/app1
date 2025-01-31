@@ -90,6 +90,29 @@ const routes = [
       { path: '', component: () => import('pages/ExerciseCategories.vue') }
     ]
   },
+
+  {
+    path: '/category/:id/exercises',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ExercisesList.vue') }
+    ]
+  },
+
+  {
+    path: '/exercise/:id',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ExerciseDetail.vue') }
+    ]
+  },
+  {
+    path: '/exercise/:id/chat',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/chat/SupportChat.vue') }
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
