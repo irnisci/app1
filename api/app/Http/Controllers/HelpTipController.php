@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\HelpTip;
 
 class HelpTipController extends Controller {
+    //Antwort speichern
     // KI-Antwort generieren und speichern
     public function getHelp(Request $request) {
         $request->validate([
