@@ -71,7 +71,7 @@ const sendMessage = async () => {
 // Begrüßungsnachricht der KI basierend auf der Übung
 onMounted(() => {
   setTimeout(() => {
-    messages.value.push({ sender: 'KI', text: 'Falls die Übung schwer war, das ist okay. Magst du darüber sprechen?', sent: false });
+    messages.value.push({ sender: 'KI-Doc', text: 'Falls die Übung schwer war, das ist okay. Magst du darüber sprechen?', sent: false });
   }, 1000);
 });
 </script>

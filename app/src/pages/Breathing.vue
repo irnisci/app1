@@ -170,7 +170,8 @@ const circleStyle = computed(() => {
 
 <style scoped>
 .breathing-background {
-  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  /* background: linear-gradient(135deg, #89f7fe, #66a6ff); */
+  background: var(--primary);
   min-height: 100vh;
 }
 

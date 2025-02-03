@@ -5,8 +5,11 @@ use App\Http\Controllers\ChatbotController;
 use App\Http\Controllers\FavoriteSoundController;
 use App\Http\Controllers\ExerciseController;
 use App\Http\Controllers\GptChatController;
+use App\Http\Controllers\HelpTipController;
 use App\Http\Controllers\JournalController;
+use App\Http\Controllers\MoodCheckinController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
@@ -37,7 +40,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/journals', [JournalController::class, 'index']);
     Route::post('/journals', [JournalController::class, 'store']);
     Route::delete('/journals/{id}', [JournalController::class, 'destroy']);
-
     Route::post('/favorite-sounds', [FavoriteSoundController::class, 'store']);
     Route::get('/favorite-sounds', [FavoriteSoundController::class, 'index']);
     Route::delete('/favorite-sounds/{id}', [FavoriteSoundController::class, 'destroy']);
@@ -50,6 +52,16 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/exercise/{id}/complete', [ExerciseController::class, 'markCompleted']);
     Route::post('/exercise/{id}/favorite', [ExerciseController::class, 'toggleFavorite']);
     Route::get('/exercise/{id}', [ExerciseController::class, 'getExercise']);
+    //ROUTEN FÜR DAS STIMMUNGSTAGEBUCH
+    Route::post('/mood-checkin', [MoodCheckinController::class, 'store']);
+    Route::get('/mood-checkin/last', [MoodCheckinController::class, 'getLastCheckin']);
+    //Change password route
+    Route::middleware('auth:sanctum')->post('/change-password', [AuthController::class, 'changePassword']);
+    //Soforthilfe routen
+    Route::post('/instant-help', [HelpTipController::class, 'getHelp']); // KI-Antwort abrufen
+    Route::middleware('auth:sanctum')->post('/save-tips', [HelpTipController::class, 'store']);
+    Route::get('/saved-tips', [HelpTipController::class, 'getSavedTips']); // Alle Tipps abrufen
+    Route::post('/saved-tips/{id}/rate', [HelpTipController::class, 'rateTip']); // Tipp bewerten
 });
 Route::post('/chatbot/respond', [ChatbotController::class, 'respond']);
 Route::post('/chatbot/gpt', [GptChatController::class, 'chat']);

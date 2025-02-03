@@ -14,6 +14,16 @@
           </q-card-section>
         </q-card>
       </div>
+         <!-- Sofort Hilfe -->
+         <div class="col-12 col-md-6">
+        <q-card class="cursor-pointer custom-card" @click="goToInstantHelp">
+          <q-card-section class="card-content">
+            <q-icon name="sos" size="lg" class="q-mb-sm" />
+            <div class="text-h6">Sofort Hilfe</div>
+            <div class="text-subtitle2">Sofort Hilfe</div>
+          </q-card-section>
+        </q-card>
+      </div>
 
       <!-- Übungen -->
       <div class="col-12 col-md-6">
@@ -90,6 +100,10 @@ const goToJournal = () => {
   router.push('/journal');
 };
 
+const goToInstantHelp = () => {
+  router.push('/instant-help');
+};
+
 const goToBreathing = () => {
   router.push('/breathing');
 };
@@ -123,7 +137,8 @@ const onLogout = () => {
 
 <style scoped>
 .startpage-background {
-  background: linear-gradient(135deg, #5CACC4, #FC9D9A);
+  /* background: linear-gradient(135deg, #5CACC4, #FC9D9A); */
+  background-color: var(--primary);
   min-height: 100vh;
   padding: 20px;
 }

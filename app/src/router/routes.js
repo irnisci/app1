@@ -53,6 +53,13 @@ const routes = [
       { path: '', component: () => import('pages/Journal.vue') }
     ]
   },
+  {
+    path: '/instant-help',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/InstantHelp.vue') }
+    ]
+  },
 
   {
     path: '/breathing',
@@ -113,8 +120,39 @@ const routes = [
       { path: '', component: () => import('pages/chat/SupportChat.vue') }
     ]
   },
+  {
+    path: '/self-assessment',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children:[
+      {path: '', component: () => import('pages/SelfAssessment.vue')}
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
+
+  //account routes
+  {
+    path: '/account',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+     { path: '',component: () => import('pages/Account.vue')}
+    ]
+  },
+  {
+    path: '/settings',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+     { path: '',component: () => import('pages/Settings.vue')}
+    ]
+  },
+  {
+    path: '/saved-tips',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+     { path: '',component: () => import('pages/SavedTips.vue')}
+    ]
+  },
+
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')

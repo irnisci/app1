@@ -60,7 +60,13 @@ const router = useRouter();
 const slide = ref('1');
 
 const startExercises = () => {
-  router.push('/exercise-categories'); // Führe zur Kategorie-Seite
+  // router.push('/exercise-categories'); // Führe zur Kategorie-Seite
+  const selfAssessmentDone = localStorage.getItem('selfAssessmentDone');
+  if (selfAssessmentDone) {
+    router.push('/exercise-categories'); // Direkt zur Übungsübersicht
+  } else {
+    router.push('/self-assessment'); // Falls noch nicht gemacht → Umfrage starten
+  }
 };
 </script>
 

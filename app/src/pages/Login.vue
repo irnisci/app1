@@ -82,7 +82,8 @@ const onLogin = async () => {
 
 <style scoped>
 .login-background {
-  background: url('assets/register-login.jpg') no-repeat center center;
+  /* background: url('assets/register-login.jpg') no-repeat center center; */
+  background :url('/doctor.jpg') no-repeat top center;
   background-size: cover;
 }
 
