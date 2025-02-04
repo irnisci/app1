@@ -168,6 +168,31 @@ const routes = [
       { path: '', component: () => import('pages/CourseDetail.vue') }
     ]
   },
+  //module
+  {
+    path: '/modules/:id',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ModuleDetail.vue') }
+    ]
+  },
+  //lesson
+  {
+    path: '/lessons/:id',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/LessonDetail.vue') }
+    ]
+  },
+
+  //TEST ALLE MODULE
+  {
+    path: '/courses/:id/modules',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ModuleOverview.vue') }
+    ]
+  },
 
   {
     path: '/:catchAll(.*)*',

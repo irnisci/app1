@@ -97,7 +97,16 @@ Route::get('/courses', [CourseController::class, 'index']);
 Route::get('/courses/{id}', [CourseController::class, 'show']);
 
 // 📌 MODUL-ROUTEN
-Route::get('/modules/{id}', [ModuleController::class, 'show']); 
+Route::get('/modules/{id}', [ModuleController::class, 'show']);
 
 // 📌 LEKTIONEN-ROUTEN
 Route::get('/lessons/{id}', [LessonController::class, 'show']);
+//LEKTION ABGESCLOSSEN
+Route::middleware('auth:sanctum')->post('/lessons/{id}/complete', [LessonController::class, 'completeLesson']);
+Route::middleware('auth:sanctum')->get('/lessons/{id}/status', [LessonController::class, 'getLessonStatus']);
+Route::middleware('auth:sanctum')->get('/modules/{id}/progress', [LessonController::class, 'getModuleProgress']);
+
+
+
+Route::middleware('auth:sanctum')->get('/courses/{id}/modules', [CourseController::class, 'getCourseModules']);
+

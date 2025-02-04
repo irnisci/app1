@@ -38,7 +38,7 @@
       </q-card-section>
 
       <q-card-section class="button-section">
-        <q-btn v-if="!isLoading" label="Jetzt starten" color="primary" @click="startCourse" />
+        <q-btn rounded outline v-if="!isLoading" label="Jetzt starten" color="primary" @click="startCourse" />
         <q-skeleton v-else type="rect" width="100px" height="40px" />
       </q-card-section>
     </q-card>
@@ -69,6 +69,7 @@ const fetchCourse = async () => {
 const goBack = () => {
   router.push('/courses');
 };
+
 
 const startCourse = () => {
   router.push(`/courses/${course.value.id}/modules`);

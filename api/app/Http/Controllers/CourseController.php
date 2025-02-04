@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\Module;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -47,4 +48,18 @@ class CourseController extends Controller
     {
         //
     }
+
+    public function getCourseModules($id)
+{
+    // Kurs suchen
+    $course = Course::findOrFail($id);
+
+    // Alle Module für diesen Kurs abrufen
+    $modules = Module::where('course_id', $id)->get();
+
+    return response()->json([
+        'course' => $course,
+        'modules' => $modules
+    ]);
+}
 }
