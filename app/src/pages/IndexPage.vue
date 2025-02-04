@@ -14,13 +14,24 @@
           </q-card-section>
         </q-card>
       </div>
-         <!-- Sofort Hilfe -->
-         <div class="col-12 col-md-6">
+      <!-- Sofort Hilfe -->
+      <div class="col-12 col-md-6">
         <q-card class="cursor-pointer custom-card" @click="goToInstantHelp">
           <q-card-section class="card-content">
             <q-icon name="sos" size="lg" class="q-mb-sm" />
             <div class="text-h6">Sofort Hilfe</div>
             <div class="text-subtitle2">Sofort Hilfe</div>
+          </q-card-section>
+        </q-card>
+      </div>
+
+      <!--Course-->
+      <div class="col-12 col-md-6">
+        <q-card class="cursor-pointer custom-card" @click="goToCourses">
+          <q-card-section class="card-content">
+            <q-icon name="school" size="lg" class="q-mb-sm" />
+            <div class="text-h6">Kurse</div>
+            <div class="text-subtitle2">Lerne mit geführten Modulen & Übungen.</div>
           </q-card-section>
         </q-card>
       </div>
@@ -122,6 +133,10 @@ const goToVisual = () => {
 
 const goToExercises = () => {
   router.push('/exercises');
+};
+
+const goToCourses = () => {
+  router.push('/courses');
 };
 
 const onLogout = () => {

@@ -1,0 +1,44 @@
+[
+    {
+      "title": "Stressbewältigung",
+      "description": "Dieser Kurs hilft dir, Stress besser zu verstehen und Techniken zu erlernen, um ihn zu reduzieren.",
+      "modules": [
+        {
+          "title": "Modul 1: Einführung in Stress",
+          "order": 1,
+          "lessons": [
+            {
+              "title": "Was ist Stress?",
+              "content": "Stress ist eine natürliche Reaktion des Körpers auf Herausforderungen. Er kann positiv (Eustress) oder negativ (Distress) sein. In dieser Lektion lernst du, wie Stress entsteht und welche Faktoren ihn beeinflussen."
+            },
+            {
+              "title": "Wie wirkt Stress auf den Körper?",
+              "content": "Wenn du gestresst bist, produziert dein Körper Stresshormone wie Adrenalin und Cortisol. Das kann zu Symptomen wie erhöhter Herzfrequenz, Muskelverspannungen oder Schlafproblemen führen. Hier erfährst du, wie du diese Symptome erkennst und kontrollierst."
+            },
+            {
+              "title": "Selbsttest: Wie gestresst bin ich?",
+              "content": "Bevor du Techniken zur Stressbewältigung lernst, solltest du wissen, wie gestresst du bist. Mache einen kurzen Test: Wie oft fühlst du dich angespannt? Hast du Schlafprobleme? Schreibe deine Antworten auf und vergleiche sie später."
+            }
+          ]
+        },
+        {
+          "title": "Modul 2: Praktische Stressbewältigung",
+          "order": 2,
+          "lessons": [
+            {
+              "title": "Tiefes Atmen",
+              "content": "Tiefes Atmen ist eine einfache, aber effektive Methode, um Stress abzubauen. Setze dich entspannt hin, atme tief durch die Nase ein (4 Sekunden), halte den Atem (4 Sekunden) und atme langsam durch den Mund aus (6 Sekunden). Wiederhole dies 5 Minuten täglich."
+            },
+            {
+              "title": "Progressive Muskelentspannung",
+              "content": "Diese Technik hilft, körperliche Anspannung zu lösen. Spanne nacheinander verschiedene Muskelgruppen an (z. B. Hände, Arme, Schultern) und entspanne sie wieder. Achte bewusst auf den Unterschied zwischen Anspannung und Entspannung."
+            },
+            {
+              "title": "Kognitive Umstrukturierung",
+              "content": "Oft entsteht Stress durch negative Gedanken. Eine effektive Methode ist, negative Gedanken bewusst umzuwandeln. Beispiel: Statt 'Ich schaffe das nicht' sage dir 'Ich kann das mit der richtigen Strategie lösen'."
+            }
+          ]
+        }
+      ]
+    }
+  ]

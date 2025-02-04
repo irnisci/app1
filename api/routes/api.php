@@ -2,11 +2,14 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatbotController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\FavoriteSoundController;
 use App\Http\Controllers\ExerciseController;
 use App\Http\Controllers\GptChatController;
 use App\Http\Controllers\HelpTipController;
 use App\Http\Controllers\JournalController;
+use App\Http\Controllers\LessonController;
+use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\MoodCheckinController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -87,3 +90,14 @@ Route::post('/chat', function (Request $request) {
 
     return response()->json(['reply' => $gptReply]);
 });
+
+
+// 📌 KURS-ROUTEN
+Route::get('/courses', [CourseController::class, 'index']);
+Route::get('/courses/{id}', [CourseController::class, 'show']);
+
+// 📌 MODUL-ROUTEN
+Route::get('/modules/{id}', [ModuleController::class, 'show']); 
+
+// 📌 LEKTIONEN-ROUTEN
+Route::get('/lessons/{id}', [LessonController::class, 'show']);

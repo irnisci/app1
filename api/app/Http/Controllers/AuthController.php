@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
-// {
+ {
 //     // public function register(Request $request)
 //     // {
 //     //     $validator = Validator::make($request->all(),[
@@ -38,6 +38,7 @@ class AuthController extends Controller
 
 
     public function login(Request $request)
+
     {
         $validator = Validator::make($request->all(),[
             "email" => "required|string|email",

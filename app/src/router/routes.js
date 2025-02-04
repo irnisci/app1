@@ -153,6 +153,22 @@ const routes = [
     ]
   },
 
+  //Courses
+  {
+    path: '/courses',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Courses.vue') }
+    ]
+  },
+  {
+    path: '/courses/:id',
+    component: () => import('layouts/SimpleLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/CourseDetail.vue') }
+    ]
+  },
+
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')
